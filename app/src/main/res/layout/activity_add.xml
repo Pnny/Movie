@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuanchendu.movie.ui.AddActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+                <TextView
+                    android:id="@+id/add_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="Movie name:"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_add_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/add_name"
+                    android:layout_toEndOf="@+id/add_name"
+                    android:ems="100"
+                    android:singleLine="true"
+                    android:textColor="#000000" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+                <TextView
+                    android:id="@+id/add_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="Rate:"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_add_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/add_rate"
+                    android:layout_toEndOf="@+id/add_rate"
+                    android:ems="100"
+                    android:singleLine="true"
+                    android:textColor="#000000" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+                <TextView
+                    android:id="@+id/add_has_seen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="Has Seen:"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/trueOrFalse"
+                    android:id="@+id/spinner"
+                    android:layout_alignTop="@+id/add_has_seen"
+                    android:layout_toRightOf="@+id/add_has_seen"
+                    android:layout_toEndOf="@+id/add_has_seen" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+                <TextView
+                    android:id="@+id/add_cast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="Cast:"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_add_cast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/add_cast"
+                    android:layout_toEndOf="@+id/add_cast"
+                    android:ems="100"
+                    android:singleLine="true"
+                    android:textColor="#000000" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/tv_add_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="24dp"
+                    android:text="add the movie description"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/et_add_description"
+                    android:layout_width="260dp"
+                    android:layout_height="80dp"
+                    android:ems="200"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:gravity="top"
+                    android:layout_below="@+id/tv_add_description"
+                    android:layout_alignLeft="@+id/tv_add_description"
+                    android:layout_alignStart="@+id/tv_add_description" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+                <TextView
+                    android:id="@+id/add_genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Genre:"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/add_genre"
+                    android:layout_toEndOf="@+id/add_genre"
+                    android:id="@+id/actionCheckBox"
+                    android:text="Action"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/actionCheckBox"
+                android:id="@+id/romanceCheckBox"
+                android:text="Romance"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/romanceCheckBox"
+                    android:id="@+id/comedyCheckBox"
+                    android:text="Comedy"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/actionCheckBox"
+                    android:layout_alignLeft="@+id/actionCheckBox"
+                    android:id="@+id/dramaCheckBox"
+                    android:text="Drama"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actionCheckBox"
+                    android:layout_toRightOf="@+id/dramaCheckBox"
+                    android:id="@+id/animeCheckBox"
+                    android:text="Anime"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actionCheckBox"
+                    android:layout_toRightOf="@+id/animeCheckBox"
+                    android:layout_alignLeft="@+id/comedyCheckBox"
+                    android:id="@+id/documentaryCheckBox"
+                    android:text="Documentary"/>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/add_submit"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

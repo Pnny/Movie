@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuanchendu.movie.ui.MainActivity">
+
+    <Button
+        android:id="@+id/showAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show all"/>
+
+    <Button
+        android:id="@+id/addMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add Movie"/>
+
+    <Button
+        android:id="@+id/removeMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="remove Movie"/>
+
+    <Button
+        android:id="@+id/displayMoviesByAlphabetically"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="display movies alphabetically"/>
+
+    <Button
+        android:id="@+id/displayMoviesByNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="display movies rated greater than or equal to a number"/>
+
+    <Button
+        android:id="@+id/displayMoviesByGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="display movies in a genre"
+        />
+
+    <Button
+        android:id="@+id/displayMoviesByActor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="display with a certain actor/actress"/>
+
+    <Button
+        android:id="@+id/displayMoviesNoSee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="display movies the user hasn’t seen"/>
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="quit"/>
+
+</LinearLayout>
